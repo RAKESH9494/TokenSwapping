@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import abi from './artifacts/contracts/Defi.sol/Defi.json';
+import abi from "./artifacts/contracts/TokenSwap.sol/TokenSwap.json"
 import Home from "./Components/Home"
 import { Web3Provider } from "@ethersproject/providers";
 import { ethers } from 'ethers'
@@ -8,7 +8,7 @@ const App = () => {
   const [Account,setAccount] = useState();
   useEffect(()=>{
     const connectWallet = async(e)=>{
-      const contractAddress = "0x8263f67ce4c4774d995d9cCB85938fb5E3329BE2";
+      const contractAddress = "0xb58feC1B5E0Aa67045539f97FF50C559a80aa7D4";
       const contractABI =abi.abi;
     try{
       const {ethereum} = window;
