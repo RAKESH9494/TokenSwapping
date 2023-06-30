@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 async function main() {
-    const Defi = await hre.ethers.getContractFactory('Defi');
-    const contract = await Defi.deploy("RAKESH","RK");
+    const Defi = await hre.ethers.getContractFactory('TokenSwap');
+    const contract = await Defi.deploy();
      await contract.deployed();
      console.log("Address of Contract : ",contract.address);  
 }
